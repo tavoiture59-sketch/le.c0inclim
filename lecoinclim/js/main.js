@@ -648,11 +648,17 @@ function stockLabel(stockStr){
   return stockStr;
 }
 
+function productImageAttrs(index){
+  const priority = index < 2 ? "high" : "low";
+  const loading = index < 2 ? "eager" : "lazy";
+  return `width="640" height="480" loading="${loading}" decoding="async" fetchpriority="${priority}"`;
+}
+
 /* ===================== RENDER: PRODUCT CARDS ===================== */
 function renderProducts(){
   const grid = document.getElementById("productsGrid");
   const products = PRODUCTS;
-  grid.innerHTML = products.map(p => {
+  grid.innerHTML = products.map((p, index) => {
     const discount = p.oldPrice ? Math.round((1 - p.price/p.oldPrice) * 100) : null;
     const outOfStock = p.stock === "Rupture de stock";
     return `
@@ -660,7 +666,7 @@ function renderProducts(){
       <div class="product-media" data-open-modal="${p.id}">
         ${discount ? `<span class="badge">-${discount}%</span>` : ""}
         <span class="badge-stock">${stockLabel(p.stock)}</span>
-        <img src="${p.images[0]}" alt="${pName(p)}" loading="lazy">
+        <img src="${p.images[0]}" alt="${pName(p)}" ${productImageAttrs(index)}>
       </div>
       <div class="product-body">
         <span class="cat">${pCat(p)}</span>
@@ -948,9 +954,9 @@ function openModal(id){
       <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#0F2B3D" stroke-width="2" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
     </button>
     <div class="modal-gallery">
-      <div class="modal-gallery-main"><img id="modalMainImg" src="${p.images[0]}" alt="${pName(p)}"></div>
+      <div class="modal-gallery-main"><img id="modalMainImg" src="${p.images[0]}" alt="${pName(p)}" width="720" height="720" decoding="async" fetchpriority="high"></div>
       <div class="modal-thumbs">
-        ${p.images.map((img,i)=>`<button data-thumb="${i}" class="${i===0?'active':''}"><img src="${img}" alt=""></button>`).join("")}
+        ${p.images.map((img,i)=>`<button data-thumb="${i}" class="${i===0?'active':''}"><img src="${img}" alt="" width="96" height="96" loading="lazy" decoding="async"></button>`).join("")}
       </div>
     </div>
     <div class="modal-info">
