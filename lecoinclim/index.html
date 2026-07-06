@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Le CoinClim — Climatiseurs livrés &amp; installés gratuitement</title>
+<meta name="description" content="Climatiseurs mobiles, split et multi-split au meilleur prix. Livraison 35€ partout en France, installation gratuite à domicile, paiement sécurisé par virement bancaire.">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="index, follow">
+<!-- Content-Security-Policy stricte : le JS est entièrement externe (js/main.js),
+     aucun script inline, aucun gestionnaire onXXX="" dans le HTML. Seul style-src
+     autorise 'unsafe-inline' à cause des quelques styles inline restants dans le
+     balisage. Cette même politique est renforcée côté serveur par les en-têtes HTTP
+     définis dans _headers (Netlify) et .htaccess (Apache / Hostinger). -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; object-src 'none'; upgrade-insecure-requests">
+<meta name="theme-color" content="#0F2B3D">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230F2B3D'/%3E%3Cg stroke='%2345C7D6' stroke-width='5' stroke-linecap='round'%3E%3Cpath d='M18 26h28M18 32h28M18 38h28'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a href="#main" class="skip-link" data-i18n="skipLink">Aller au contenu principal</a>
+
+<!-- ===================== ANNOUNCEMENT BAR ===================== -->
+<div class="announce">
+  <div class="announce-track">
+    <span data-i18n-html="ann1">Déstockage été 2026 — jusqu'à <b>-43%</b> sur une sélection</span>
+    <span data-i18n-html="ann2">Livraison <b>35€</b> partout en France</span>
+    <span data-i18n-html="ann3"><b>Installation gratuite</b> à domicile</span>
+    <span data-i18n-html="ann4">Paiement 100% sécurisé par <b>virement bancaire</b></span>
+    <span data-i18n-html="ann1">Déstockage été 2026 — jusqu'à <b>-43%</b> sur une sélection</span>
+    <span data-i18n-html="ann2">Livraison <b>35€</b> partout en France</span>
+    <span data-i18n-html="ann3"><b>Installation gratuite</b> à domicile</span>
+    <span data-i18n-html="ann4">Paiement 100% sécurisé par <b>virement bancaire</b></span>
+  </div>
+</div>
+
+<!-- ===================== HEADER ===================== -->
+<header class="site">
+  <div class="wrap nav-row">
+    <a href="#main" class="logo">
+      <span class="logo-mark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#7FE0E8" stroke-width="2" stroke-linecap="round"><path d="M4 8h16M4 12h16M4 16h16"/></svg>
+      </span>
+      Le Coin<em>Clim</em>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="#produits" data-i18n="navProduits">Produits</a>
+      <a href="#comment-ca-marche" data-i18n="navLivraison">Livraison &amp; installation</a>
+      <a href="#avis" data-i18n="navAvis">Avis clients</a>
+      <a href="#faq" data-i18n="navFaq">Questions fréquentes</a>
+      <a href="#contact" data-i18n="navContact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <div class="lang-switch" role="group" aria-label="Choix de la langue / Sprachauswahl">
+        <button type="button" class="lang-btn active" id="langFrBtn" data-lang="fr">FR</button>
+        <button type="button" class="lang-btn" id="langDeBtn" data-lang="de">DE</button>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#0F2B3D" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+      <button class="icon-btn" id="cartOpenBtn" aria-label="Ouvrir le panier">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h2l2.4 12.4a2 2 0 0 0 2 1.6h8.4a2 2 0 0 0 2-1.6L22 8H6"/><circle cx="9" cy="21" r="1"/><circle cx="18" cy="21" r="1"/></svg>
+        <span class="cart-count" id="cartCount" hidden>0</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow" data-i18n="heroEyebrow">Climatisation &amp; confort thermique</p>
+        <h1 data-i18n-html="heroTitle">Votre intérieur mérite<br>son <span class="accent">propre climat</span>.</h1>
+        <p class="lede" data-i18n="heroLede">Climatiseurs mobiles, split et multi-split sélectionnés pour leur efficacité. Livrés en 48/72h, installés gratuitement à domicile, réglés en toute simplicité par virement bancaire.</p>
+        <div class="hero-cta">
+          <a href="#produits" class="btn btn-accent" data-i18n="heroCta1">Voir les climatiseurs</a>
+          <a href="#comment-ca-marche" class="btn btn-ghost" data-i18n="heroCta2">Comment ça marche</a>
+        </div>
+        <div class="trust-strip">
+          <div class="item"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/><path d="M9 21v-6h6v6"/></svg><span data-i18n="trust1">Installation gratuite</span></div>
+          <div class="item"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="6" width="15" height="12" rx="2"/><path d="M16 10h3.5L22 13.5V18h-6"/><circle cx="6" cy="19" r="2"/><circle cx="18" cy="19" r="2"/></svg><span data-i18n="trust2">Livraison 35€</span></div>
+          <div class="item"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg><span data-i18n="trust3">Virement sécurisé</span></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="display-card">
+          <div class="display-top">
+            <span class="label" data-i18n="heroDisplayLabel">CoinClim // Unité active</span>
+            <span class="display-dot" aria-hidden="true"></span>
+          </div>
+          <div class="display-readout">
+            <span class="temp" id="heroTemp">34</span>
+            <span class="deg">°C</span>
+          </div>
+          <p class="display-caption" id="heroCaption" data-i18n="heroCaption">Température extérieure</p>
+          <div class="display-bars" id="heroBars">
+            <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+          </div>
+          <div class="display-foot">
+            <div><span data-i18n="heroFootMode">Mode</span><b id="heroMode">Refroidissement</b></div>
+            <div><span data-i18n="heroFootDelivery">Livraison</span><b>48-72h</b></div>
+            <div><span data-i18n="heroFootWarranty">Garantie</span><b>2 ans</b></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TRUST BAND ===================== -->
+  <div class="trust-band">
+    <div class="wrap">
+      <div class="cell">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/><path d="M9 21v-6h6v6"/></svg>
+        <div><h4 data-i18n="band1h">Installation gratuite</h4><p data-i18n="band1p">Par un professionnel, directement chez vous.</p></div>
+      </div>
+      <div class="cell">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="6" width="15" height="12" rx="2"/><path d="M16 10h3.5L22 13.5V18h-6"/><circle cx="6" cy="19" r="2"/><circle cx="18" cy="19" r="2"/></svg>
+        <div><h4 data-i18n="band2h">Livraison à 35€</h4><p data-i18n="band2p">Partout en France, sous 48 à 72h ouvrées.</p></div>
+      </div>
+      <div class="cell">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+        <div><h4 data-i18n="band3h">Virement bancaire</h4><p data-i18n="band3p">Paiement simple, sans saisie de carte en ligne.</p></div>
+      </div>
+      <div class="cell">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3 6.5 7 1-5.2 4.9L18 21l-6-3.4L6 21l1.2-6.6L2 9.5l7-1z"/></svg>
+        <div><h4 data-i18n="band4h">Garantie 2 ans</h4><p data-i18n="band4p">Pièces et main d'œuvre sur tous les modèles.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== PRODUCTS ===================== -->
+  <section id="produits">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow" data-i18n="prodEyebrow">Notre sélection</p>
+        <h2 data-i18n="prodTitle">Des climatiseurs sélectionnés pour vous rafraîchir</h2>
+        <p data-i18n="prodSubtitle">Du monobloc mobile au multi-split connecté, chaque appareil est choisi pour son efficacité réelle et sa fiabilité — pas pour son prix affiché.</p>
+      </div>
+      <div class="products-grid" id="productsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ===================== HOW IT WORKS ===================== -->
+  <section id="comment-ca-marche" class="how-section">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow" data-i18n="howEyebrow">Livraison &amp; installation</p>
+        <h2 data-i18n="howTitle">De la commande à l'air frais, en 4 étapes</h2>
+        <p data-i18n="howSubtitle">Un parcours pensé pour être simple, sans mauvaise surprise et sans engagement caché.</p>
+      </div>
+      <div class="steps-grid">
+        <div class="step-card reveal">
+          <div class="step-num">01</div>
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="18" cy="21" r="1"/><path d="M3 3h2l2.4 12.4a2 2 0 0 0 2 1.6h8.4a2 2 0 0 0 2-1.6L22 8H6"/></svg>
+          <h4 data-i18n="step1h">Choisissez votre modèle</h4>
+          <p data-i18n="step1p">Ajoutez au panier le climatiseur adapté à la surface de votre pièce.</p>
+        </div>
+        <div class="step-card reveal">
+          <div class="step-num">02</div>
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+          <h4 data-i18n="step2h">Réglez par virement</h4>
+          <p data-i18n="step2p">À la commande, vous recevez un RIB et une référence unique à indiquer.</p>
+        </div>
+        <div class="step-card reveal">
+          <div class="step-num">03</div>
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="6" width="15" height="12" rx="2"/><path d="M16 10h3.5L22 13.5V18h-6"/><circle cx="6" cy="19" r="2"/><circle cx="18" cy="19" r="2"/></svg>
+          <h4 data-i18n="step3h">Livraison sous 48-72h</h4>
+          <p data-i18n="step3p">Partout en France métropolitaine pour un forfait unique de 35€.</p>
+        </div>
+        <div class="step-card reveal">
+          <div class="step-num">04</div>
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/><path d="M9 21v-6h6v6"/></svg>
+          <h4 data-i18n="step4h">Installation gratuite</h4>
+          <p data-i18n="step4p">Un professionnel installe votre appareil directement chez vous, sans frais.</p>
+        </div>
+      </div>
+
+      <div class="delivery-zone reveal">
+        <div class="delivery-zone-text">
+          <p class="eyebrow" data-i18n="dzEyebrow">Zone de livraison</p>
+          <h3 data-i18n="dzTitle">Livrés partout en France métropolitaine</h3>
+          <p data-i18n="dzText">Notre réseau de transporteurs couvre l'ensemble du territoire, des grandes métropoles aux villes moyennes : Paris, Lyon, Marseille, Toulouse, Bordeaux, Nantes, Lille, Strasbourg et bien d'autres. Le forfait de livraison reste unique quelle que soit votre région.</p>
+          <ul class="delivery-zone-list">
+            <li data-i18n="dzLi1">Livraison en 48-72h ouvrées après confirmation du virement</li>
+            <li data-i18n="dzLi2">Installation gratuite par un professionnel, partout en métropole</li>
+            <li data-i18n="dzLi3">Le créneau de livraison souhaité (matin, après-midi, soirée) est pris en compte</li>
+          </ul>
+        </div>
+        <div class="delivery-zone-map">
+          <svg viewBox="0 0 520 480" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Carte de l'Europe avec la zone de livraison en France">
+            <!-- Decorative, simplified (non-cartographic) map of Western Europe -->
+            <path d="M60 80 q-14 10 -10 28 q4 16 -6 26 q-10 10 2 22 q10 10 26 4 q14 -6 16 -22 q2 -18 -8 -30 q-8 -10 -20 -28z" fill="var(--frost-deep)"/>
+            <path d="M30 70 q-10 6 -6 18 q4 10 -6 16 q-8 6 2 14 q8 6 16 -2 q6 -8 2 -18 q-4 -12 -8 -28z" fill="var(--frost-deep)"/>
+            <path d="M78 268 q-8 30 -4 58 q2 18 14 20 q10 2 10 -16 l2 -56 q-2 -14 -12 -14 q-8 0 -10 8z" fill="var(--frost-deep)"/>
+            <path d="M96 260 q-6 24 0 50 q6 22 26 30 q26 10 50 -2 q20 -10 22 -32 q2 -22 -10 -38 q-14 -18 -38 -20 q-32 -4 -50 12z" fill="var(--frost-deep)"/>
+            <path d="M228 148 q-4 12 4 20 q8 8 22 4 q12 -4 12 -18 q0 -14 -14 -18 q-16 -4 -24 12z" fill="var(--frost-deep)"/>
+            <path d="M256 150 q-8 22 -2 46 q6 22 -2 42 q-6 16 8 24 q16 8 32 -2 q16 -10 16 -30 q0 -22 8 -40 q8 -18 -4 -32 q-14 -16 -34 -16 q-16 0 -22 8z" fill="var(--frost-deep)"/>
+            <path d="M268 246 q-4 10 4 16 q10 8 22 2 q10 -6 6 -18 q-4 -12 -18 -12 q-10 0 -14 12z" fill="var(--frost-deep)"/>
+            <path d="M300 240 q6 20 2 40 q-4 22 6 40 q6 12 18 8 q10 -4 6 -18 q-6 -22 2 -40 q6 -14 -4 -26 q-12 -14 -30 -4z" fill="var(--frost-deep)"/>
+            <path d="M312 322 q6 8 16 6 q10 -2 8 -12 q-2 -10 -14 -8 q-10 2 -10 14z" fill="var(--frost-deep)"/>
+
+            <path d="M148 172 q22 -18 52 -14 q18 2 26 16 q10 4 22 -2 q14 -6 22 6 q6 10 -2 20 q-6 8 2 18 q8 10 -2 20 q-10 10 -6 24 q4 16 -8 26 q-10 8 -8 22 q2 16 -12 22 q-16 6 -30 -4 q-14 -10 -30 -6 q-18 4 -30 -8 q-10 -10 -6 -24 q4 -14 -6 -24 q-10 -10 -6 -24 q4 -14 -6 -24 q-10 -10 -2 -22 q6 -10 20 -6 q10 2 12 -16z"
+                  fill="var(--cyan)" opacity="0.9"/>
+            <text x="205" y="200" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="var(--white)" text-anchor="middle" data-i18n="dzMapFrance">FRANCE</text>
+
+            <circle cx="205" cy="222" r="14" fill="var(--cyan-glow)" opacity="0.35">
+              <animate attributeName="r" values="8;18;8" dur="2.6s" repeatCount="indefinite"/>
+              <animate attributeName="opacity" values="0.5;0;0.5" dur="2.6s" repeatCount="indefinite"/>
+            </circle>
+            <circle cx="205" cy="222" r="5" fill="var(--ink)"/>
+            <text x="215" y="219" font-family="Arial, sans-serif" font-size="11.5" fill="var(--ink)" font-weight="700">Paris</text>
+
+            <circle cx="240" cy="248" r="3.5" fill="var(--ink)"/><text x="248" y="252" font-family="Arial, sans-serif" font-size="10.5" fill="var(--ink)">Lyon</text>
+            <circle cx="252" cy="286" r="3.5" fill="var(--ink)"/><text x="260" y="290" font-family="Arial, sans-serif" font-size="10.5" fill="var(--ink)">Marseille</text>
+            <circle cx="176" cy="256" r="3.5" fill="var(--ink)"/><text x="140" y="260" font-family="Arial, sans-serif" font-size="10.5" fill="var(--ink)">Bordeaux</text>
+            <circle cx="196" cy="272" r="3.5" fill="var(--ink)"/><text x="160" y="284" font-family="Arial, sans-serif" font-size="10.5" fill="var(--ink)">Toulouse</text>
+            <circle cx="168" cy="212" r="3.5" fill="var(--ink)"/><text x="128" y="208" font-family="Arial, sans-serif" font-size="10.5" fill="var(--ink)">Nantes</text>
+            <circle cx="212" cy="176" r="3.5" fill="var(--ink)"/><text x="214" y="170" font-family="Arial, sans-serif" font-size="10.5" fill="var(--ink)">Lille</text>
+            <circle cx="252" cy="200" r="3.5" fill="var(--ink)"/><text x="258" y="198" font-family="Arial, sans-serif" font-size="10.5" fill="var(--ink)">Strasbourg</text>
+
+            <g transform="translate(20,404)">
+              <circle cx="6" cy="0" r="6" fill="var(--cyan)"/>
+              <text x="18" y="4" font-family="Arial, sans-serif" font-size="12" fill="var(--steel)" data-i18n="dzMapLegend">Zone de livraison actuelle : France métropolitaine</text>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== REVIEWS ===================== -->
+  <section id="avis">
+    <div class="wrap">
+      <div class="reviews-head-row reveal">
+        <div class="section-head" style="margin-bottom:0;">
+          <p class="eyebrow" data-i18n="reviewsEyebrow">Avis clients</p>
+          <h2 data-i18n="reviewsTitle">Ce que nos clients en pensent</h2>
+        </div>
+        <div class="rating-summary">
+          <span class="score">4,8</span>
+          <div>
+            <div class="stars">★★★★★</div>
+            <div class="meta" data-i18n="reviewsMeta">Basé sur 214 avis vérifiés</div>
+          </div>
+        </div>
+      </div>
+      <div class="reviews-grid" id="reviewsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ===================== FAQ ===================== -->
+  <section id="faq" style="background:var(--frost);">
+    <div class="wrap">
+      <div class="section-head reveal" style="margin-left:auto; margin-right:auto; text-align:center;">
+        <p class="eyebrow" style="justify-content:center;" data-i18n="faqEyebrow">Questions fréquentes</p>
+        <h2 data-i18n="faqTitle">Tout ce qu'il faut savoir avant de commander</h2>
+      </div>
+      <div class="faq-list reveal" id="faqList"></div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA BANNER ===================== -->
+  <section>
+    <div class="wrap">
+      <div class="cta-banner reveal">
+        <div>
+          <h3 data-i18n="ctaTitle">Une question avant de commander ?</h3>
+          <p data-i18n="ctaText">Notre équipe vous répond rapidement sur WhatsApp, sans blabla commercial.</p>
+        </div>
+        <a href="#contact" class="btn btn-accent" data-i18n="ctaBtn">Nous écrire</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site" id="contact">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#main" class="logo">
+          <span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="#7FE0E8" stroke-width="2" stroke-linecap="round"><path d="M4 8h16M4 12h16M4 16h16"/></svg></span>
+          Le Coin<em>Clim</em>
+        </a>
+        <p data-i18n="footerDesc">Climatiseurs sélectionnés, livrés et installés gratuitement chez les particuliers en France. Paiement exclusivement par virement bancaire.</p>
+        <div class="footer-badges">
+          <div class="footer-badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.4 8.5-8 10-4.6-1.5-8-5-8-10V6z"/></svg><span data-i18n="footerBadge1">Site sans traceur publicitaire</span></div>
+          <div class="footer-badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg><span data-i18n="footerBadge2">Données conservées au minimum</span></div>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5 data-i18n="footerColShop">Boutique</h5>
+        <ul>
+          <li><a href="#produits" data-i18n="footerLink1">Tous les climatiseurs</a></li>
+          <li><a href="#comment-ca-marche" data-i18n="navLivraison">Livraison &amp; installation</a></li>
+          <li><a href="#avis" data-i18n="navAvis">Avis clients</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5 data-i18n="footerColInfo">Informations</h5>
+        <ul>
+          <li><a href="#" id="linkCGV" data-i18n="footerCgv">Conditions générales de vente</a></li>
+          <li><a href="#" id="linkRetours" data-i18n="footerRetours">Retours &amp; garantie</a></li>
+          <li><a href="#" id="linkConfidentialite" data-i18n="footerConfidentialite">Confidentialité</a></li>
+          <li><a href="#" id="linkMentions" data-i18n="footerMentions">Mentions légales</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5 data-i18n="footerColContact">Contact</h5>
+        <ul>
+          <li><a href="mailto:contact@lecoinclim.fr">contact@lecoinclim.fr</a></li>
+          <li style="color:var(--steel-light); font-size:13.8px;" data-i18n="footerContactNote">Commandes traitées via WhatsApp</li>
+        </ul>
+        <form id="contactForm" style="margin-top:18px; display:flex; flex-direction:column; gap:10px;">
+          <input type="text" name="website" class="visually-hidden" tabindex="-1" autocomplete="off">
+          <input required type="text" placeholder="Votre nom" aria-label="Votre nom" id="cName" data-i18n-placeholder="cNamePh" style="padding:10px 12px; border-radius:8px; border:1px solid rgba(255,255,255,0.15); background:rgba(255,255,255,0.05); color:var(--white); font-size:13.5px;">
+          <input required type="email" placeholder="Votre e-mail" aria-label="Votre e-mail" id="cEmail" data-i18n-placeholder="cEmailPh" style="padding:10px 12px; border-radius:8px; border:1px solid rgba(255,255,255,0.15); background:rgba(255,255,255,0.05); color:var(--white); font-size:13.5px;">
+          <textarea required placeholder="Votre message" aria-label="Votre message" id="cMsg" rows="3" data-i18n-placeholder="cMsgPh" style="padding:10px 12px; border-radius:8px; border:1px solid rgba(255,255,255,0.15); background:rgba(255,255,255,0.05); color:var(--white); font-size:13.5px; resize:vertical; font-family:inherit;"></textarea>
+          <button type="submit" class="btn btn-accent btn-sm" data-i18n="cSubmit">Préparer mon message</button>
+        </form>
+        <div class="contact-choice" id="contactChoice" hidden style="margin-top:10px;">
+          <a href="#" id="waContactLink" target="_blank" rel="noopener" class="contact-choice-btn wa" style="background:rgba(37,211,102,0.12); border-color:rgba(37,211,102,0.4);">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.6-.8-1.9-.9-.2-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.5.1-.3-.1-1.2-.4-2.2-1.4-.8-.7-1.4-1.6-1.5-1.9-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.4.1-.2 0-.4 0-.5-.1-.1-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.1 0 1.2.9 2.4 1 2.6.1.2 1.8 2.8 4.4 3.8.6.3 1.1.4 1.5.5.6.2 1.2.2 1.6.1.5-.1 1.6-.6 1.8-1.3.2-.6.2-1.1.2-1.3-.1-.1-.3-.2-.5-.3z"/><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 20.2 12 8.2 8.2 0 0 1 12 20.2z"/></svg>
+            <span><b style="color:var(--white);">WhatsApp</b><small style="color:var(--steel-light);" data-i18n="waFastReply">Réponse rapide</small></span>
+          </a>
+          <a href="#" id="gmailContactLink" class="contact-choice-btn mail disabled" aria-disabled="true" style="background:rgba(255,255,255,0.06); border-color:rgba(255,255,255,0.15);">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--white);"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+            <span><b style="color:var(--white);">E-mail</b><small style="color:var(--steel-light);" data-i18n="emailUnavailableShort">Temporairement indisponible</small></span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="legal-note" data-i18n-html="legalNote">
+      <b>Mentions légales — à compléter avant mise en ligne :</b> conformément à la loi française (LCEN), ce site doit afficher la dénomination de l'entreprise, sa forme juridique, son adresse de siège social ou de domiciliation, son numéro SIRET et le nom du directeur de la publication. Ces informations sont indépendantes de la question de vie privée : une adresse de domiciliation commerciale peut être utilisée à la place d'une adresse personnelle. Remplacez les champs "Mentions légales" dans le code avant toute mise en ligne réelle.
+    </div>
+    <div class="footer-bottom">
+      <span data-i18n="footerCopyright">© 2026 Le CoinClim. Tous droits réservés.</span>
+      <span data-i18n="footerNoCookies">Site conçu sans cookies publicitaires ni traceurs tiers.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ===================== CART OVERLAY + DRAWER ===================== -->
+<div class="overlay" id="overlay"></div>
+<aside class="drawer" id="cartDrawer" aria-label="Panier">
+  <div class="drawer-head">
+    <h3 id="drawerTitle" data-i18n="cartTitle">Votre panier</h3>
+    <button class="drawer-close" id="cartCloseBtn" aria-label="Fermer le panier">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#0F2B3D" stroke-width="2" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+  </div>
+  <div class="drawer-body" id="drawerBody">
+    <!-- cart view -->
+    <div id="cartView"></div>
+    <!-- checkout view -->
+    <div class="checkout-box" id="checkoutView">
+      <p style="font-size:13.5px; color:var(--steel); margin:0 0 4px;" data-i18n="checkoutIntro">Indiquez vos coordonnées complètes : plus elles sont précises, plus la livraison et l'installation seront simples pour le transporteur.</p>
+      <input type="text" name="website" id="checkoutWebsite" class="visually-hidden" tabindex="-1" autocomplete="off">
+
+      <div class="form-group-label" data-i18n="checkoutGroupContact">Vos coordonnées</div>
+      <input required type="text" id="checkoutName" placeholder="Nom et prénom" autocomplete="name" class="chk-input" data-i18n-placeholder="checkoutNamePh">
+      <input required type="email" id="checkoutEmail" placeholder="Votre e-mail" autocomplete="email" class="chk-input" data-i18n-placeholder="checkoutEmailPh">
+      <input required type="tel" id="checkoutPhone" placeholder="Téléphone (le livreur vous appelle avant de passer)" autocomplete="tel" class="chk-input" data-i18n-placeholder="checkoutPhonePh">
+
+      <div class="form-group-label" data-i18n="checkoutGroupAddress">Adresse de livraison</div>
+      <input required type="text" id="checkoutAddress" placeholder="Numéro et nom de rue" autocomplete="address-line1" class="chk-input" data-i18n-placeholder="checkoutAddressPh">
+      <input type="text" id="checkoutAddress2" placeholder="Complément (bâtiment, étage, appartement)" autocomplete="address-line2" class="chk-input" data-i18n-placeholder="checkoutAddress2Ph">
+      <div class="chk-row">
+        <input required type="text" id="checkoutPostal" placeholder="Code postal" inputmode="numeric" autocomplete="postal-code" class="chk-input" style="max-width:130px;" data-i18n-placeholder="checkoutPostalPh">
+        <input required type="text" id="checkoutCity" placeholder="Ville" autocomplete="address-level2" class="chk-input" data-i18n-placeholder="checkoutCityPh">
+      </div>
+      <select id="checkoutCountry" class="chk-input" autocomplete="country">
+        <option value="France" selected data-i18n="countryFrance">France (métropolitaine)</option>
+        <option value="Belgique" data-i18n="countryBelgique">Belgique</option>
+        <option value="Suisse" data-i18n="countrySuisse">Suisse</option>
+        <option value="Luxembourg" data-i18n="countryLuxembourg">Luxembourg</option>
+        <option value="Autre" data-i18n="countryAutre">Autre pays européen</option>
+      </select>
+
+      <div class="form-group-label" data-i18n="checkoutGroupFacilitate">Faciliter la livraison</div>
+      <select id="checkoutSlot" class="chk-input">
+        <option value="Peu importe" data-i18n="slotAny">Créneau indifférent</option>
+        <option value="Matin (8h-12h)" data-i18n="slotMorning">Matin (8h–12h)</option>
+        <option value="Après-midi (12h-18h)" data-i18n="slotAfternoon">Après-midi (12h–18h)</option>
+        <option value="Soirée (18h-20h)" data-i18n="slotEvening">Soirée (18h–20h)</option>
+      </select>
+      <textarea id="checkoutNotes" placeholder="Accès : digicode, étage, ascenseur, place de parking, consignes particulières… (optionnel)" rows="2" class="chk-input" style="resize:vertical; font-family:inherit;" data-i18n-placeholder="checkoutNotesPh"></textarea>
+
+      <div class="order-ref" id="checkoutTotal">Total de la commande : 0,00 €</div>
+      <button class="btn btn-accent btn-block" id="confirmPaidBtn" data-i18n="checkoutSubmit">Valider ma commande</button>
+      <button class="btn btn-ghost btn-block" id="backToCartBtn" data-i18n="backToCart">Retour au panier</button>
+    </div>
+    <!-- confirmation view -->
+    <div class="confirm-view" id="confirmView">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-6"/></svg>
+      <h3 style="margin-bottom:10px;" data-i18n="confirmTitle">Commande enregistrée</h3>
+      <p style="color:var(--steel); font-size:14px; line-height:1.6;" data-i18n="confirmText">Votre récapitulatif est prêt. Choisissez comment contacter notre service client pour confirmer votre commande et recevoir le RIB.</p>
+
+      <div class="contact-choice">
+        <a href="#" id="waConfirmLink" target="_blank" rel="noopener" class="contact-choice-btn wa">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.6-.8-1.9-.9-.2-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.5.1-.3-.1-1.2-.4-2.2-1.4-.8-.7-1.4-1.6-1.5-1.9-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.4.1-.2 0-.4 0-.5-.1-.1-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.1 0 1.2.9 2.4 1 2.6.1.2 1.8 2.8 4.4 3.8.6.3 1.1.4 1.5.5.6.2 1.2.2 1.6.1.5-.1 1.6-.6 1.8-1.3.2-.6.2-1.1.2-1.3-.1-.1-.3-.2-.5-.3z"/><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 20.2 12 8.2 8.2 0 0 1 12 20.2z"/></svg>
+          <span><b>WhatsApp</b><small data-i18n="waDirectExchange">Réponse rapide, échange direct</small></span>
+        </a>
+        <a href="#" id="gmailConfirmLink" class="contact-choice-btn mail disabled" aria-disabled="true">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+          <span><b>E-mail</b><small data-i18n="emailUnavailableShort">Temporairement indisponible</small></span>
+        </a>
+      </div>
+
+      <p style="color:var(--steel); font-size:13px; line-height:1.6; margin-top:14px;" data-i18n-html="confirmFooterNote">Pour toute commande, merci de passer par <b style="color:var(--ink);">WhatsApp au +49 176 16021496</b> : notre messagerie e-mail est temporairement surchargée.</p>
+      <button class="btn btn-ghost btn-block" id="closeConfirmBtn" style="margin-top:10px;" data-i18n="close">Fermer</button>
+    </div>
+  </div>
+  <div class="drawer-foot" id="drawerFoot">
+    <div class="sum-row"><span data-i18n="subtotal">Sous-total</span><span class="num" id="sumSubtotal">0,00 €</span></div>
+    <div class="sum-row"><span data-i18n="delivery">Livraison</span><span class="num" id="sumDelivery">35,00 €</span></div>
+    <div class="sum-row total"><span data-i18n="total">Total</span><span class="num" id="sumTotal">0,00 €</span></div>
+    <button class="btn btn-accent btn-block" id="checkoutBtn" style="margin-top:14px;" data-i18n="orderBtn">Commander</button>
+  </div>
+</aside>
+
+<!-- ===================== PRODUCT MODAL ===================== -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal-box" id="modalBox" role="dialog" aria-modal="true"></div>
+</div>
+
+<!-- ===================== INFO MODAL (CGV, Retours, Confidentialité, Mentions légales) ===================== -->
+<div class="modal-overlay" id="infoModalOverlay">
+  <div class="info-modal-box" id="infoModalBox" role="dialog" aria-modal="true"></div>
+</div>
+
+<!-- ===================== TOAST ===================== -->
+<div class="toast-wrap" id="toastWrap"></div>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>

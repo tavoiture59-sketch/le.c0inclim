@@ -1,0 +1,97 @@
+[
+  {
+    "id": "midea-portasplit-12000",
+    "name": "Midea PortaSplit 4 en 1 – 12000 BTU",
+    "cat": "Climatiseur split mobile",
+    "price": 650,
+    "oldPrice": null,
+    "stockQty": 6,
+    "desc": "Le Midea PortaSplit réunit le confort d'un climatiseur split fixe et la simplicité d'un modèle mobile. Son unité extérieure compacte se pose sur un balcon ou un rebord de fenêtre grâce à une simple liaison flexible, sans percement de mur ni intervention d'un frigoriste. En mode 4 en 1, il rafraîchit en été, chauffe en intersaison, déshumidifie l'air ambiant et ventile les pièces jusqu'à 45 m². Sa technologie split réduit fortement le niveau sonore à l'intérieur par rapport à un monobloc classique, pour des nuits calmes même en pleine chaleur. Modèle en fin de série proposé en déstockage, quantités limitées.",
+    "specs": [
+      "Puissance frigorifique : 12000 BTU (env. 3,5 kW)",
+      "Fonctions : froid, chaud, déshumidificateur, ventilateur",
+      "Surface recommandée : jusqu'à 45 m²",
+      "Installation sans percement, unité extérieure compacte",
+      "Télécommande incluse"
+    ],
+    "images": [
+      "/images/products/midea-portasplit-12000-1.jpg",
+      "/images/products/midea-portasplit-12000-2.jpg",
+      "/images/products/midea-portasplit-12000-3.jpg",
+      "/images/products/midea-portasplit-12000-4.jpg",
+      "/images/products/midea-portasplit-12000-5.jpg",
+      "/images/products/midea-portasplit-12000-6.jpg"
+    ]
+  },
+  {
+    "id": "forceclima-7150-style",
+    "name": "ForceClima 7150 Style – Climatiseur portatif 7000 BTU",
+    "cat": "Climatisation portative",
+    "price": 300,
+    "oldPrice": 559,
+    "stockQty": 5,
+    "desc": "Le ForceClima 7150 Style est un climatiseur monobloc mobile pensé pour les petites et moyennes pièces. Compact et léger, il se déplace facilement d'une pièce à l'autre grâce à ses roulettes et se met en route en quelques minutes, kit de fenêtre fourni. Sa fonction déshumidification aide à assainir l'air en période humide et son mode ventilation permet de l'utiliser toute l'année. Le panneau de contrôle digital et la télécommande simplifient le réglage de la température et de la minuterie. Un excellent rapport confort/prix pour équiper rapidement un studio, une chambre ou un bureau. Modèle en déstockage, stock limité.",
+    "specs": [
+      "Puissance frigorifique : 7000 BTU (env. 2 kW)",
+      "Fonctions : froid, déshumidificateur, ventilateur",
+      "Surface recommandée : jusqu'à 20 m²",
+      "Kit d'évacuation fenêtre inclus",
+      "Roulettes de déplacement et télécommande"
+    ],
+    "images": [
+      "/images/products/forceclima-7150-style-1.jpg",
+      "/images/products/forceclima-7150-style-2.jpg",
+      "/images/products/forceclima-7150-style-3.jpg",
+      "/images/products/forceclima-7150-style-4.jpg",
+      "/images/products/forceclima-7150-style-5.jpg",
+      "/images/products/forceclima-7150-style-6.jpg"
+    ]
+  },
+  {
+    "id": "beko-bp1095cn-9000",
+    "name": "Climatiseur mobile connecté BEKO BP1095CN – 9000 BTU",
+    "cat": "Climatiseur mobile",
+    "price": 199,
+    "oldPrice": null,
+    "stockQty": 5,
+    "desc": "Le BEKO BP1095CN purifie l'air de votre maison tout en vous offrant un confort optimal toute l'année. Avec sa puissance de 9000 BTU et sa puissance frigorifique d'environ 2600 W, il rafraîchit rapidement vos pièces, tandis que sa fonction chauffage apporte un accompagnement pratique au quotidien. Profitez également du pilotage à distance et des commandes vocales pour une utilisation simple, moderne et efficace. Surface de la pièce : 25 à 30 m².",
+    "specs": [
+      "Puissance : 9000 BTU (env. 2600 W)",
+      "Fonctions : froid et chaud",
+      "Surface recommandée : 25 à 30 m²",
+      "Pilotage à distance et commandes vocales",
+      "Composition : climatiseur portable, manuel d'instructions, télécommande, kit d'installation sur fenêtre"
+    ],
+    "images": [
+      "/images/products/beko-bp1095cn-9000-1.jpg",
+      "/images/products/beko-bp1095cn-9000-2.jpg",
+      "/images/products/beko-bp1095cn-9000-3.jpg",
+      "/images/products/beko-bp1095cn-9000-4.jpg",
+      "/images/products/beko-bp1095cn-9000-5.jpg",
+      "/images/products/beko-bp1095cn-9000-6.jpg"
+    ]
+  },
+  {
+    "id": "trisplit-airclima-27000",
+    "name": "TRISPLIT AirClima 27000 Multi Connected",
+    "cat": "Multi-split",
+    "price": 749,
+    "oldPrice": 1149,
+    "stockQty": 5,
+    "desc": "Le TRISPLIT AirClima 27000 Multi Connected est un système de climatisation multi-split réversible permettant de raccorder jusqu'à trois unités intérieures à une seule unité extérieure. Idéal pour équiper une maison ou un appartement sur plusieurs pièces sans multiplier les groupes extérieurs, il combine performance énergétique, fonctionnement silencieux et pilotage connecté via application mobile pour régler la température de chaque pièce à distance. Chaque zone est réglable indépendamment, en froid comme en chaud, pour un confort optimal toute l'année. Une solution premium pour les foyers qui recherchent une climatisation complète avec une installation professionnelle simplifiée. Modèle en déstockage, disponibilité limitée.",
+    "specs": [
+      "Puissance totale : 27000 BTU cumulés, 3 zones",
+      "Fonctions : froid et chaud (réversible)",
+      "Pilotage connecté via application mobile",
+      "Réglage indépendant de chaque unité intérieure",
+      "Installation par un professionnel recommandée"
+    ],
+    "images": [
+      "/images/products/trisplit-airclima-27000-1.jpg",
+      "/images/products/trisplit-airclima-27000-2.jpg",
+      "/images/products/trisplit-airclima-27000-3.jpg",
+      "/images/products/trisplit-airclima-27000-4.jpg",
+      "/images/products/trisplit-airclima-27000-5.jpg"
+    ]
+  }
+]

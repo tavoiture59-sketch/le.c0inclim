@@ -1,0 +1,38 @@
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <rect width="500" height="500" fill="#E4F1F3"/>
+  <rect x="40" y="40" width="420" height="420" rx="24" fill="#FFFFFF" stroke="#D7E4E6" stroke-width="2"/>
+  <!-- AC unit body -->
+  <rect x="120" y="190" width="260" height="140" rx="18" fill="#0F2B3D"/>
+  <rect x="140" y="212" width="220" height="18" rx="9" fill="#1D8996"/>
+  <rect x="140" y="240" width="220" height="60" rx="10" fill="#54707D" opacity="0.35"/>
+  <!-- vents -->
+  <rect x="150" y="252" width="200" height="6" rx="3" fill="#E4F1F3"/>
+  <rect x="150" y="264" width="200" height="6" rx="3" fill="#E4F1F3"/>
+  <rect x="150" y="276" width="200" height="6" rx="3" fill="#E4F1F3"/>
+  <rect x="150" y="288" width="200" height="6" rx="3" fill="#E4F1F3"/>
+  <!-- control panel -->
+  <circle cx="335" cy="221" r="5" fill="#FFFFFF"/>
+  <circle cx="352" cy="221" r="5" fill="#FFFFFF" opacity="0.5"/>
+  <!-- wheels -->
+  <circle cx="155" cy="335" r="14" fill="#0F2B3D"/>
+  <circle cx="345" cy="335" r="14" fill="#0F2B3D"/>
+  <circle cx="155" cy="335" r="5" fill="#E4F1F3"/>
+  <circle cx="345" cy="335" r="5" fill="#E4F1F3"/>
+  
+      <!-- reversible sun+snowflake glyph -->
+      <circle cx="322" cy="172" r="14" fill="#E0A63D"/>
+      <g stroke="#E0A63D" stroke-width="3">
+        <line x1="322" y1="148" x2="322" y2="140"/>
+        <line x1="322" y1="196" x2="322" y2="204"/>
+        <line x1="298" y1="172" x2="290" y2="172"/>
+        <line x1="346" y1="172" x2="354" y2="172"/>
+      </g>
+      <g stroke="#2FA9B8" stroke-width="4" stroke-linecap="round">
+        <line x1="358" y1="150" x2="358" y2="182"/>
+        <line x1="344" y1="158" x2="372" y2="174"/>
+        <line x1="344" y1="174" x2="372" y2="158"/>
+      </g>
+  <!-- placeholder badge -->
+  <rect x="60" y="60" width="146" height="30" rx="15" fill="#0F2B3D" opacity="0.88"/>
+  <text x="133" y="80" font-family="Arial, sans-serif" font-size="13" fill="#FFFFFF" text-anchor="middle" font-weight="700">PHOTO À VENIR</text>
+</svg>
